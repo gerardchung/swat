@@ -1,0 +1,113 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.custom-nav}
+[Home](index.qmd){.nav-link-item}
+[People](people/index.qmd){.nav-link-item}
+[Join Us](opportunities.qmd){.nav-link-item}
+:::
+
+::: {.container}
+::: {.hero #about}
+[SOCIAL WORK + TECH]{.hero-tag}
+
+# Social Work and Technology Lab
+
+We are a research group who wants to **promote digital social work practice**. 
+We study how digital tools can empower social workers and the communities they serve. 
+Our mission is to ensure that as technology evolves, it always **respects the heart and intuition** that social workers bring to their practice, truly supporting the **human side of care**.
+:::
+:::
+
+::: {.container}
+## Principles {#principles .section-label}
+
+Our research is guided by a set of principles.
+
+::: {.grid}
+
+::: {.g-col-4 .grid-card}
+[01]{.card-num} 
+
+### Support Expertise
+
+Technology should complement the situated and social knowledge of social workers, not replace human judgment.
+:::
+
+::: {.g-col-4 .grid-card}
+[02]{.card-num} 
+
+### Labor Dignity
+
+We design tools that prioritize the visibility, value, and dignity of social work labor.
+:::
+
+::: {.g-col-4 .grid-card}
+[03]{.card-num} 
+
+### Hybrid Practice
+
+We treat digital and physical interactions as a single, integrated practice.
+:::
+
+:::
+:::
+
+::: {.container}
+## Current Research Projects {#research .section-label}
+
+::: {.research-grid}
+
+::: {.research-card}
+![](images/research1.webp){.research-img}
+[Text-based Engagement]{.category}
+
+#### Text Chats
+Studying how professionals use text-based platforms like crisis chatlines and Discord communities to engage children, youths and other young persons.
+:::
+
+::: {.research-card}
+![](images/research2.webp){.research-img}
+[Immersive and Simulated Training]{.category} 
+
+#### Simulation & Training
+Developing VR and digital avatar role-playing tools for professional training of social workers.
+:::
+
+::: {.research-card}
+![](images/research3.webp){.research-img}
+[Digital Social Work]{.category} 
+
+#### Transition to Tech Roles 
+Understanding how social service practitioners transit to ops-tech roles. 
+
+#### Scribe
+Analyzing the impact of Scribe on workers and supervisors.
+:::
+
+::: {.research-card}
+![](images/research4.webp){.research-img}
+[Youths' Use of Digital Mental Health]{.category} 
+
+#### Decision-making of Mental Health Service
+Investigating how young people choose between chatbots and face-to-face services.
+:::
+
+::: {.research-card}
+![](images/research5.webp){.research-img}
+[Intervention Development]{.category} 
+
+#### Intervention Design & Evaluation
+Designing and evaluating social service programs.
+:::
+
+:::
+:::
+
+::: {.footer}
+::: {.container}
+© 2026 SWAT Lab. Singapore.
+:::
+:::

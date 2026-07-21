@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 941c6e43-fd5b-4227-9709-3f62e219b3a7
+      url: https://swatlab.netlify.app

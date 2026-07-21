@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "SWAT LAB"
+  navbar:
+    background: white
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "People"
+        href: people/index.qmd
+      - text: "Join Us"
+        href: opportunities.qmd
+
+format:
+  html:
+    theme: none
+    css: style.css
+    toc: false
+
+editor:
+  mode: source

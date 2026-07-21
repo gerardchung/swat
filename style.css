@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #fdfdfd;           /* Warm off-white */
+    --card-bg: #ffffff;
+    --text: #1a1c20;         
+    --text-muted: #64748b;
+    /* Logo Palette */
+    --accent: #F16A37;       /* Logo Orange */
+    --accent-secondary: #8BA330; /* Logo Green */
+    --accent-glow: rgba(241, 106, 55, 0.04);
+    --border: #edf0f5;
+    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.03);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: var(--bg); 
+    color: var(--text); 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0; 
+    line-height: 1.6;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* CENTERED CONTAINER - Prevents content from stretching to screen ends */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Warm Navigation */
+.custom-nav {
+    width: 100%;
+    background: rgba(253, 253, 253, 0.85);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-link-item {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 1rem;
+    transition: all 0.2s;
+}
+
+.nav-link-item:hover { color: var(--accent); }
+
+/* Hero Section */
+.hero { padding: 8rem 0 4rem 0; }
+
+.hero-tag { 
+    background: var(--accent-glow); 
+    color: var(--accent); 
+    padding: 0.6rem 1.2rem; 
+    border-radius: 100px; 
+    font-size: 0.85rem; 
+    font-weight: 700;
+    border: 1px solid rgba(241, 106, 55, 0.1);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.hero h1 { 
+    font-size: clamp(2.5rem, 8vw, 4.8rem);
+    letter-spacing: -0.04em; 
+    line-height: 1.1; 
+    margin-bottom: 1.5rem; 
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grids - Fixed width to prevent stretching */
+.grid, .research-grid { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 3rem; /* Increased space BETWEEN panels */
+    width: 100%;
+    max-width: 1000px; /* Enforces the boundary */
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    .hero { padding: 10rem 0 6rem 0; }
+}
+
+/* Box Panels - Reduced internal padding */
+.grid-card, .research-card { 
+    background: var(--card-bg); 
+    padding: 1.8rem; /* Words fill the box better */
+    border-radius: 24px; 
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+.grid-card:hover, .research-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-secondary);
+}
+
+.card-num { 
+    background: var(--accent-glow);
+    color: var(--accent);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Research Specific Styles */
+.research-card h4 {
+    color: var(--accent); /* Orange header for projects */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.category { 
+    color: var(--accent-secondary); /* Green category label */
+    font-weight: 700; 
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+/* Profile Image - Strict Round Sizing */
+.profile-img, .profile-img-lead {
+    width: 160px !important;
+    height: 160px !important;
+    min-width: 160px; /* Prevents shrinking */
+    min-height: 160px; /* Prevents shrinking */
+    aspect-ratio: 1 / 1 !important; 
+    object-fit: cover !important; 
+    border-radius: 50% !important;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+    border: 4px solid var(--accent-glow);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Footer Section */
+.footer { 
+    width: 100%; 
+    padding: 4rem 0; 
+    background: #f8f9ff; 
+    margin-top: 6rem; 
+    color: var(--text-muted);
+}
+
+
+/* Research Card Image Styling */
+
+.research-img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover; 
+    /* 0.8 makes the image 80% of its original size, revealing more edges */
+    transform: scale(0.8); 
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+
+/* Adjust the Research Grid to 2 columns for better image visibility */
+@media (min-width: 768px) {
+    .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Ensure cards maintain a clean look with images */
+.research-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+/* ============================================
+   OPPORTUNITIES / JOIN US PAGE
+   ============================================ */
+
+/* Small uppercase section heading */
+.section-label {
+    width: 100%;
+    text-align: left;
+    max-width: 1000px;
+    margin: 3rem auto 1.5rem auto;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+/* Stand-out note / callout box */
+.opp-note {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+    text-align: left;
+    background: var(--accent-glow);
+    border: 1px solid rgba(241, 106, 55, 0.15);
+    border-left: 5px solid var(--accent);
+    border-radius: 14px;
+    padding: 1.1rem 1.4rem;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.opp-note p { margin: 0; }
+
+/* Grid of opportunity cards */
+.opp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .opp-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Individual opportunity card */
+.opp-card {
+    background: var(--card-bg);
+    padding: 1.8rem;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.opp-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-secondary);
+}
+
+.opp-card h3 {
+    color: var(--accent);          /* Orange project title */
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.02em;
+}
+
+.opp-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+/* "Recruiting" pill at top of card */
+.opp-status {
+    align-self: flex-start;
+    background: rgba(139, 163, 48, 0.1);   /* Green tint */
+    color: var(--accent-secondary);
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+/* Requirement checklist */
+.opp-reqs {
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0 0;            /* pin to bottom for even card heights */
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+}
+
+.opp-reqs li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.45rem 0;
+    color: var(--text);
+}
+
+.opp-reqs .check {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-secondary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 800;
+    margin-top: 1px;
+}

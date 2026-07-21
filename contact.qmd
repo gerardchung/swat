@@ -1,0 +1,29 @@
+---
+title: "Gerard Chung"
+about: 
+  id: contact
+  template: solana
+  image-shape: round
+  image: people/chung-gerard/avatar.png
+# page-layout: full
+---
+
+
+
+:::{#contact}
+
+#### {{< fa envelope >}} &nbsp; gerard@nus.edu.sg
+
+#### {{< fa map-location-dot >}} &nbsp; Department of Social Work, NUS, 3 Arts Link AS3, Level 4, 117570
+
+
+:::
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7995402409256!2d103.76837601118787!3d1.2948233986874358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1af925555555%3A0xbdf935aece4a9349!2sNUS%20Dept%20of%20Social%20Work!5e0!3m2!1sen!2ssg!4v1719065129867!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+<br>
+
+

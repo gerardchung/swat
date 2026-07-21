@@ -1,0 +1,60 @@
+---
+# title: 'Welcome to the SWAT Group: <span style="color:#757883">Social Work: Tech & AI</span>'
+# subtitle: "Social Work: Tech & AI"
+page-layout: full
+---
+<div class="gradient-text">
+
+<div class="welcome-headline">
+Welcome to the SWAT Group<br>
+</div>
+<div class="welcome-subheadline">
+Social Work and Tech
+</div>
+</div>
+
+
+::::{.cmm-background}
+
+
+
+::: {.content-container}
+::: {.welcome }
+
+
+::: grid
+::: {.g-col-12 .g-col-lg-5 .welcome-text .sand-background style="padding: 15px;"}
+
+Our SWAT:Lab welcomes anyone based in Singapore 🇸🇬, including researchers, social workers, counsellors, social service professionals, computer scientists, and also students. We are passionate about exploring how technology and AI can be used in the social services.
+
+
+Our interests focus on: 
+
+- Exploring new technologies that be used to support social work practice in the social service sector
+
+- Understanding how social service practitioners interacts with technologies that promotes their autonomy, competencies, and relational needs and  that aligns with professional values and ethics 
+
+- Identifying areas where technologies can enhance social work training and education of students and professionals 
+
+
+Our work:
+
+- Evaluation research to examine the effectiveness or implementation of technologies in social work training and practice
+- Research on how social work professionals and students, and service users interact with technologies
+- Consultation work to support research, development, and implementation of technologies
+- Training and talks to share our research and work 
+
+
+
+:::
+
+:::
+
+
+
+:::
+:::
+
+::::
+
+

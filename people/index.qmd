@@ -1,0 +1,59 @@
+---
+title: "People"
+page-layout: full
+---
+
+::: {.custom-nav}
+[Home](../index.qmd){.nav-link-item}
+[People](index.qmd){.nav-link-item}
+[Join Us](../opportunities.qmd){.nav-link-item}
+:::
+
+:::: container
+::: {.hero}
+[OUR TEAM]{.hero-tag} 
+
+:::
+
+::: {.lead-section}
+![](gerardchung1.webp){.profile-img-lead}
+
+## Gerard Chung
+**Lab Lead**
+
+:::
+
+---
+
+## Team Members
+
+::: {layout-ncol=3}
+::: {.grid-card}
+
+
+![](images/tay-darren/avatar.jpeg){.profile-img}
+
+#### Darren Tay
+Research Assistant \
+Social Work Undergraduate
+:::
+
+::: {.grid-card}
+
+
+![](images/neo-jiexiang/avatar.jpg){.profile-img}
+
+#### Darren Tay
+Research Assistant \
+Computer Science Undergraduate
+
+:::
+
+::: {.grid-card}
+
+
+#### To be updated soon!
+
+:::
+:::
+::::

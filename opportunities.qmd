@@ -1,0 +1,82 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.custom-nav}
+[Home](index.qmd){.nav-link-item}
+[People](people/index.qmd){.nav-link-item}
+[Join Us](opportunities.qmd){.nav-link-item}
+:::
+
+::: {.container}
+::: {.hero}
+[WORK WITH US]{.hero-tag}
+
+# Opportunities
+
+We regularly have openings for students and collaborators to join our projects.
+Below are the current opportunities — each card lists what the project is about and
+who we are looking for. Interested? [Get in touch](contact.qmd).
+
+::: {.opp-note}
+📌 Below opportunities are also open for students' honours thesis or final year project.
+:::
+:::
+:::
+
+::: {.container}
+## Current Openings {#openings .section-label}
+
+::: {.opp-grid}
+
+::: {.opp-card}
+[Recruiting]{.opp-status}
+
+### AI in Crisis Chat Service
+
+Evaluation of an AI tool that supports crisis chat workers to respond to service users.
+
+<ul class="opp-reqs">
+  <li><span class="check">✔</span> Research and Admin</li>
+  <li><span class="check">✔</span> NUS Students</li>
+  <li><span class="check">✔</span> 2–3 hours a week for a semester</li>
+</ul>
+:::
+
+::: {.opp-card}
+[Recruiting]{.opp-status}
+
+### What Works in Text-Based Engagement in Chat Services?
+
+We want to understand the key skills and techniques that are central to effective text-based chat services.
+
+<ul class="opp-reqs">
+  <li><span class="check">✔</span> Qualitative &amp; quantitative text analysis, data annotation, writing</li>
+  <li><span class="check">✔</span> Researchers, NUS Students, Graduate Students &amp; Practitioners</li>
+  <li><span class="check">✔</span> 2–3 hours a week</li>
+</ul>
+:::
+
+::: {.opp-card}
+[Recruiting]{.opp-status}
+
+### AI-Avatar Role-Playing Simulation for Social Work, Nursing, and Medical Students
+
+We are evaluating the impact of this tool on students and conducting user experience research.
+
+<ul class="opp-reqs">
+  <li><span class="check">✔</span> Participants to test our tool; qualitative interviewing, data annotation &amp; quantitative analysis</li>
+  <li><span class="check">✔</span> Researchers, NUS Students &amp; Graduate Students</li>
+  <li><span class="check">✔</span> 2–3 hours a week</li>
+</ul>
+:::
+
+:::
+:::
+
+::: {.footer}
+::: {.container}
+© 2026 SWAT Lab. Singapore.
+:::
+:::
