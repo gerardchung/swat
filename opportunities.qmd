@@ -72,6 +72,20 @@ We are evaluating the impact of this tool on students and conducting user experi
 </ul>
 :::
 
+::: {.opp-card}
+[Recruiting]{.opp-status}
+
+### Evaluation of LEAP
+
+We are evaluating a program that also uses a journal app to support families.
+
+<ul class="opp-reqs">
+  <li><span class="check">✔</span> Research and Admin; Qualitative &amp; quantitative text analysis, data annotation</li>
+  <li><span class="check">✔</span> NUS Students</li>
+  <li><span class="check">✔</span> 2–3 hours a week for 1–2 semesters</li>
+</ul>
+:::
+
 :::
 :::
 
