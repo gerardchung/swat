@@ -12,9 +12,11 @@ Bootstrap theme (`theme: none`), all styling lives in `style.css`.
 
 - **Render the whole site:** `quarto render` → output goes to `_site/`
 - **Render one page:** `quarto render opportunities.qmd`
-- **Go live:** the site is hosted on **Netlify**. Deploy = `quarto render`,
-  then commit and **push to `main`**. Netlify redeploys from `main`.
-- `main` is the live site. There should normally be only one branch (`main`).
+- **Go live:** the site is hosted on **Netlify**, but it is NOT linked to
+  GitHub — pushing to `main` does not deploy. Deploy = `quarto render`, then
+  `quarto publish netlify --no-prompt --no-browser --no-render` (site id in
+  `_publish.yml`). Also commit and push to `main` to keep the repo in sync.
+- There should normally be only one branch (`main`).
 
 ## Structure
 
