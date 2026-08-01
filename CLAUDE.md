@@ -22,6 +22,7 @@ Bootstrap theme (`theme: none`), all styling lives in `style.css`.
 |----------------------|--------------------------------------------------------|
 | `index.qmd`          | Home page                                              |
 | `people/index.qmd`   | People / team page                                     |
+| `research.qmd`       | Research page — project themes with APA publication lists |
 | `opportunities.qmd`  | "Join Us" — job / project opportunity cards            |
 | `contact.qmd`        | Contact page (uses Quarto's `about` template)          |
 | `style.css`          | **All** site styling (colors, nav, cards, callouts)    |
@@ -34,7 +35,7 @@ Bootstrap theme (`theme: none`), all styling lives in `style.css`.
 
 - **Navigation** is a hand-built `.custom-nav` block at the top of each page
   (not Quarto's navbar, since `theme: none`). When adding a page, add its link
-  to the `.custom-nav` on **every** page. Current links: Home, People, Join Us.
+  to the `.custom-nav` on **every** page. Current links: Home, People, Research, Join Us.
 - **Colors** come from CSS variables in `style.css` (`:root`):
   `--accent` = logo orange `#F16A37`, `--accent-secondary` = logo green `#8BA330`.
   Reuse these variables rather than hard-coding colors.

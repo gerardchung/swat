@@ -6,6 +6,7 @@ page-layout: full
 ::: {.custom-nav}
 [Home](index.qmd){.nav-link-item}
 [People](people/index.qmd){.nav-link-item}
+[Research](research.qmd){.nav-link-item}
 [Join Us](opportunities.qmd){.nav-link-item}
 :::
 
@@ -39,7 +40,7 @@ Evaluation of an AI tool that supports crisis chat workers to respond to service
 
 <ul class="opp-reqs">
   <li><span class="check">✔</span> Research and Admin</li>
-  <li><span class="check">✔</span> NUS Students</li>
+  <li><span class="check">✔</span> NUS Students, Graduate Students</li>
   <li><span class="check">✔</span> 2–3 hours a week for a semester</li>
 </ul>
 :::

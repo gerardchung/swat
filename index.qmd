@@ -6,6 +6,7 @@ page-layout: full
 ::: {.custom-nav}
 [Home](index.qmd){.nav-link-item}
 [People](people/index.qmd){.nav-link-item}
+[Research](research.qmd){.nav-link-item}
 [Join Us](opportunities.qmd){.nav-link-item}
 :::
 

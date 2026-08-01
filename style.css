@@ -328,3 +328,96 @@ body {
     font-weight: 800;
     margin-top: 1px;
 }
+
+/* ============================================
+   RESEARCH PAGE
+   ============================================ */
+
+/* Full-width theme card */
+.pub-card {
+    background: var(--card-bg);
+    padding: 2rem 2.2rem;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.pub-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-secondary);
+}
+
+.pub-card h3 {
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.02em;
+}
+
+.pub-card > p {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+/* "Project theme" pill at top of card */
+.pub-pill {
+    display: inline-block;
+    background: rgba(139, 163, 48, 0.1);
+    color: var(--accent-secondary);
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+/* APA reference list */
+.pub-list {
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+.pub-item {
+    padding-left: 2em;
+    text-indent: -2em;      /* APA hanging indent */
+    line-height: 1.65;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0 0 0.9rem 0;
+    color: var(--text);
+}
+
+/* Small "Preprint" pill inside a citation */
+.pub-tag {
+    display: inline-block;
+    text-indent: 0;
+    background: rgba(139, 163, 48, 0.1);
+    color: var(--accent-secondary);
+    padding: 0.05rem 0.6rem;
+    border-radius: 100px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+    vertical-align: 1px;
+    white-space: nowrap;
+}
+
+/* DOI / OSF link inside a citation */
+.pub-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.pub-link:hover { text-decoration: underline; }

@@ -1,0 +1,74 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.custom-nav}
+[Home](index.qmd){.nav-link-item}
+[People](people/index.qmd){.nav-link-item}
+[Research](research.qmd){.nav-link-item}
+[Join Us](opportunities.qmd){.nav-link-item}
+:::
+
+::: {.container}
+::: {.hero}
+[OUR WORK]{.hero-tag}
+
+# Research
+
+Our research sits at the intersection of social work practice and technology.
+Below are our main project themes and the publications from each — including
+preprints of work currently under review.
+:::
+:::
+
+::: {.container}
+## Research Themes {#themes .section-label}
+
+::: {.pub-card}
+[Project theme]{.pub-pill}
+
+### AI-Simulated Role-Playing in Social Work Training
+
+<div class="pub-list">
+<p class="pub-item">Chung, G. (2026). Thinking, feeling, and relating with an AI service user: A think-aloud study of social work students in AI-mediated clinical roleplay. <em>EdArXiv</em>. <a class="pub-link" href="https://doi.org/10.35542/osf.io/qajdc_v1">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+<p class="pub-item">Chung, G., Wong, P.-H., Cheung, J. C.-S., Yim, J., Cheng, S., Tay, D., &amp; Zheng, L. (2025). Beyond skill training: Teaching social work "rituals" through large language model (LLM) simulated role-play. <em>SocArXiv</em>. <a class="pub-link" href="https://doi.org/10.31235/osf.io/ve762_v1">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+<p class="pub-item">Chung, G., Cheng, S., Ong, B., Zheng, L., Soh, D. J. Y., &amp; Ow Yong, F. Z. L. (2025). Role-playing in social work education: A survey of undergraduate students' experiences and implementation preferences in Singapore. <em>OSF Preprints</em>. <a class="pub-link" href="https://doi.org/10.31219/osf.io/nhe25_v1">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+<p class="pub-item">Chung, G., Ong, B., Ow Yong, F. Z. L., &amp; Cheng, S. (2024). Enhancing role-playing pedagogy in social work education: A scoping review through the lens of deliberate practice. <em>OSF Preprints</em>. <a class="pub-link" href="https://doi.org/10.31219/osf.io/4jpvk">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+</div>
+:::
+
+::: {.pub-card}
+[Project theme]{.pub-pill}
+
+### Text-Based Chat Services and Text Engagement Skills
+
+<div class="pub-list">
+<p class="pub-item">Chung, G. S. K., &amp; Lim, T. M. (2026). What makes text-based online chat work? Communication features of effective chat helpers' responses to chat users. <em>Counselling and Psychotherapy Research, 26</em>(3). <a class="pub-link" href="https://doi.org/10.1002/capr.70166">DOI ↗</a></p>
+<p class="pub-item">Chung, G. S. K. (2026). "Clicking without understanding": A mixed-methods analysis of user agreements in digital mental health services. <em>International Journal of Medical Informatics, 213</em>, 106384. <a class="pub-link" href="https://doi.org/10.1016/j.ijmedinf.2026.106384">DOI ↗</a></p>
+<p class="pub-item">Chung, G., Yee, A. Z. H., Thell, N., &amp; Lim, T. M. (2026). Who reciprocates whom? Mutual influence in emoticon use and perceived responsiveness between chat workers and young people seeking help. <em>PsyArXiv</em>. <a class="pub-link" href="https://doi.org/10.31234/osf.io/xn9t7_v2">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+<p class="pub-item">Chung, G., Lim, T. M., &amp; Kampman, O. P. (2026). Worker skills associated with outcomes in suicidal-related youth chat sessions. <em>SocArXiv</em>. <a class="pub-link" href="https://doi.org/10.31235/osf.io/qaet6_v1">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+</div>
+:::
+
+::: {.pub-card}
+[Project theme]{.pub-pill}
+
+### Program Evaluation of Social Service Interventions
+
+<div class="pub-list">
+<p class="pub-item">Koh, L., Chung, G., Ariffin, A., Cheng, S., &amp; Chia, E. Y. M. (2026). Training community advocates: Evaluating the training of peer supporters in a peer support program among youths with or at risk of non-suicidal self-injury. <em>OSF Preprints</em>. <a class="pub-link" href="https://doi.org/10.31219/osf.io/4bkvm_v2">DOI ↗</a><span class="pub-tag">Preprint</span></p>
+<p class="pub-item">Lanier, P., Chung, G., &amp; Rose, R. (2022). A quasi-experimental study of intensive alternative family treatment to prevent entry of youth to psychiatric residential treatment. <em>Child and Adolescent Social Work Journal, 39</em>(3), 303–311. <a class="pub-link" href="https://doi.org/10.1007/s10560-021-00758-9">DOI ↗</a></p>
+<p class="pub-item">Rose, R. A., Chung, G., &amp; Lanier, P. J. (2021). Effectiveness of intensive alternative family treatment on reducing re-admissions to psychiatric residential treatment facilities. <em>Journal of Emotional and Behavioral Disorders, 29</em>(2), 113–124. <a class="pub-link" href="https://doi.org/10.1177/1063426620980700">DOI ↗</a></p>
+<p class="pub-item">Lanier, P., Jensen, T., Bryant, K., Chung, G., Rose, R., Smith, Q., &amp; Lackmann, L. (2020). A systematic review of the effectiveness of children's behavioral health interventions in psychiatric residential treatment facilities. <em>Children and Youth Services Review, 113</em>, 104951. <a class="pub-link" href="https://doi.org/10.1016/j.childyouth.2020.104951">DOI ↗</a></p>
+<p class="pub-item">Lanier, P., Frey, J., Smith, Q., &amp; Chung, G. (2019). A quasi-experimental study of a peer support group to enhance protective factors for fathers of children in Head Start. <em>Journal of Child and Family Studies, 28</em>(6), 1558–1570. <a class="pub-link" href="https://doi.org/10.1007/s10826-019-01383-y">DOI ↗</a></p>
+</div>
+:::
+
+:::
+
+::: {.footer}
+::: {.container}
+© 2026 SWAT Lab. Singapore.
+:::
+:::

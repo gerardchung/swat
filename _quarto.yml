@@ -1,8 +1,12 @@
 project:
   type: website
+  render:
+    - "**/*.qmd"
+    - "!CLAUDE.md"
 
 website:
   title: "SWAT LAB"
+  site-url: https://swatlab.netlify.app
   navbar:
     background: white
     left:
@@ -10,6 +14,8 @@ website:
         href: index.qmd
       - text: "People"
         href: people/index.qmd
+      - text: "Research"
+        href: research.qmd
       - text: "Join Us"
         href: opportunities.qmd
 
