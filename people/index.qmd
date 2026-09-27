@@ -59,5 +59,15 @@ Computer Science Undergraduate
 Social Work & Computer Science Undergraduate
 
 :::
+
+::: {.grid-card}
+
+
+![](images/cheng-sophie/avatar.jpg){.profile-img}
+
+#### [Sophie Cheng](https://discovery.nus.edu.sg/23806-sophie-cheng)
+Lecturer, NUS Department of Social Work
+
+:::
 :::
 ::::
