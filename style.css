@@ -145,6 +145,14 @@ a:focus-visible {
     color: var(--ink);
 }
 
+/* Brand mark above the home page title */
+.hero-mark {
+    display: block;
+    width: 112px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+}
+
 .hero p {
     font-size: 18px;
     line-height: 28px;

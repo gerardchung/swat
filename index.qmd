@@ -14,7 +14,7 @@ page-layout: full
 
 ::: {.container}
 ::: {.hero #about}
-[SOCIAL WORK + TECH]{.hero-tag}
+![](brand/logos/swatlab-mark.svg){.hero-mark}
 
 # Social Work and Technology Lab
 
