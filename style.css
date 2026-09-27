@@ -1,30 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Work+Sans:wght@400;600&display=swap');
 
+/* SWAT Lab "Sage & Clay" brand tokens — see brand/BRAND.md and _brand.yml */
 :root {
-    --bg: #fdfdfd;           /* Warm off-white */
-    --card-bg: #ffffff;
-    --text: #1a1c20;         
-    --text-muted: #64748b;
-    /* Logo Palette */
-    --accent: #F16A37;       /* Logo Orange */
-    --accent-secondary: #8BA330; /* Logo Green */
-    --accent-glow: rgba(241, 106, 55, 0.04);
-    --border: #edf0f5;
-    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.03);
+    --surface: #F2EFE8;        /* Linen — page background */
+    --surface-raised: #FAF8F3; /* Cards, panels */
+    --line: #DEDAD0;           /* 1px borders */
+    --ink: #2D2F2A;            /* Charcoal — main text */
+    --ink-body: #45483F;       /* Paragraph text */
+    --ink-muted: #5F625B;      /* Captions, labels */
+    --sage: #8A9A83;           /* Shapes only, not text */
+    --sage-deep: #56654F;      /* Primary: links, buttons, active */
+    --on-sage-deep: #F2EFE8;   /* Text on sage-deep */
+    --sage-soft: #E4E9E0;      /* Tag / chip background */
+    --sage-text: #3F4C3A;      /* Text on sage-soft */
+    --clay: #B5876E;           /* Small accent only */
+    --clay-text: #8E5E48;      /* Clay as readable text */
+
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-pill: 999px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-body { 
-    background-color: var(--bg); 
-    color: var(--text); 
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    margin: 0; 
-    line-height: 1.6;
+body {
+    background-color: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.625;
     text-align: center;
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: var(--ink);
+}
+
+h2 { font-size: 28px; line-height: 34px; }
+h3 { font-size: 22px; line-height: 28px; }
+h4 { font-size: 19px; line-height: 26px; }
+
+p { color: var(--ink-body); }
+
+a { color: var(--sage-deep); }
+
+a:focus-visible {
+    outline: 2px solid var(--sage-deep);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 /* CENTERED CONTAINER - Prevents content from stretching to screen ends */
@@ -37,62 +71,90 @@ body {
     align-items: center;
 }
 
-/* Warm Navigation */
+/* Navigation — logo on the left, links on the right */
 .custom-nav {
     width: 100%;
-    background: rgba(253, 253, 253, 0.85);
+    background: rgba(242, 239, 232, 0.9);   /* Linen */
     backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 1rem max(2rem, calc((100% - 1000px) / 2 + 2rem));
+    border-bottom: 1px solid var(--line);
+}
+
+.custom-nav p { margin: 0; }
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    /* clear space around the logo */
+    padding: 4px 0;
+}
+
+.nav-logo-img {
+    display: block;
+    height: 44px;
+    width: auto;
 }
 
 .nav-link-item {
     text-decoration: none;
-    color: var(--text);
+    color: var(--ink);
     font-weight: 600;
     font-size: 0.95rem;
-    margin: 0 1rem;
-    transition: all 0.2s;
+    margin: 0 0 0 1.5rem;
+    white-space: nowrap;
+    transition: color 0.2s;
 }
 
-.nav-link-item:hover { color: var(--accent); }
+.nav-link-item:hover { color: var(--sage-deep); }
+
+@media (max-width: 600px) {
+    .custom-nav { justify-content: center; padding: 0.75rem 1rem; }
+    .nav-link-item { margin: 0 0.6rem; font-size: 0.9rem; }
+}
 
 /* Hero Section */
 .hero { padding: 8rem 0 4rem 0; }
 
-.hero-tag { 
-    background: var(--accent-glow); 
-    color: var(--accent); 
-    padding: 0.6rem 1.2rem; 
-    border-radius: 100px; 
-    font-size: 0.85rem; 
-    font-weight: 700;
-    border: 1px solid rgba(241, 106, 55, 0.1);
+.hero-tag {
+    background: var(--sage-soft);
+    color: var(--sage-text);
+    padding: 0.5rem 1.1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     margin-bottom: 2rem;
     display: inline-block;
 }
 
-.hero h1 { 
-    font-size: clamp(2.5rem, 8vw, 4.8rem);
-    letter-spacing: -0.04em; 
-    line-height: 1.1; 
-    margin-bottom: 1.5rem; 
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    letter-spacing: -0.01em;
+    line-height: 1.07;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 28px;
 }
 
 /* Grids - Fixed width to prevent stretching */
-.grid, .research-grid { 
-    display: grid; 
+.grid, .research-grid {
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem; /* Increased space BETWEEN panels */
+    gap: 2rem;
     width: 100%;
     max-width: 1000px; /* Enforces the boundary */
     margin: 0 auto;
@@ -104,47 +166,45 @@ body {
     .hero { padding: 10rem 0 6rem 0; }
 }
 
-/* Box Panels - Reduced internal padding */
-.grid-card, .research-card { 
-    background: var(--card-bg); 
-    padding: 1.8rem; /* Words fill the box better */
-    border-radius: 24px; 
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-soft);
-    transition: all 0.3s ease;
+/* Box Panels — borders, not shadows */
+.grid-card, .research-card {
+    background: var(--surface-raised);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--line);
+    transition: border-color 0.2s ease;
 }
 
 .grid-card:hover, .research-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-secondary);
+    border-color: var(--sage);
 }
 
-.card-num { 
-    background: var(--accent-glow);
-    color: var(--accent);
+.card-num {
+    background: var(--sage-soft);
+    color: var(--sage-text);
     width: 35px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-weight: 800;
+    border-radius: var(--radius-md);
+    font-weight: 600;
     font-size: 0.85rem;
     margin-bottom: 1.2rem;
 }
 
 /* Research Specific Styles */
 .research-card h4 {
-    color: var(--accent); /* Orange header for projects */
+    color: var(--sage-deep);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-.category { 
-    color: var(--accent-secondary); /* Green category label */
-    font-weight: 700; 
+.category {
+    color: var(--clay-text);
+    font-weight: 600;
     font-size: 0.75rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
     display: block;
@@ -156,22 +216,22 @@ body {
     height: 160px !important;
     min-width: 160px; /* Prevents shrinking */
     min-height: 160px; /* Prevents shrinking */
-    aspect-ratio: 1 / 1 !important; 
-    object-fit: cover !important; 
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
     border-radius: 50% !important;
     margin: 0 auto 1.5rem auto;
     display: block;
-    border: 4px solid var(--accent-glow);
-    box-shadow: var(--shadow-soft);
+    border: 4px solid var(--sage-soft);
 }
 
 /* Footer Section */
-.footer { 
-    width: 100%; 
-    padding: 4rem 0; 
-    background: #f8f9ff; 
-    margin-top: 6rem; 
-    color: var(--text-muted);
+.footer {
+    width: 100%;
+    padding: 4rem 0;
+    background: var(--surface-raised);
+    border-top: 1px solid var(--line);
+    margin-top: 6rem;
+    color: var(--ink-muted);
 }
 
 
@@ -179,11 +239,11 @@ body {
 
 .research-img {
     width: 100%;
-    height: 350px; 
-    object-fit: cover; 
+    height: 350px;
+    object-fit: cover;
     /* 0.8 makes the image 80% of its original size, revealing more edges */
-    transform: scale(0.8); 
-    border-radius: 2px;
+    transform: scale(0.8);
+    border-radius: var(--radius-sm);
     margin-bottom: 1.5rem;
     display: block;
 }
@@ -208,14 +268,13 @@ body {
    OPPORTUNITIES / JOIN US PAGE
    ============================================ */
 
-/* Small uppercase section heading */
+/* Section heading */
 .section-label {
     width: 100%;
     text-align: left;
     max-width: 1000px;
     margin: 3rem auto 1.5rem auto;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-weight: 500;
 }
 
 /* Stand-out note / callout box */
@@ -224,18 +283,18 @@ body {
     max-width: 1000px;
     margin: 2rem auto 0 auto;
     text-align: left;
-    background: var(--accent-glow);
-    border: 1px solid rgba(241, 106, 55, 0.15);
-    border-left: 5px solid var(--accent);
-    border-radius: 14px;
+    background: var(--sage-soft);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--sage-deep);
+    border-radius: var(--radius-lg);
     padding: 1.1rem 1.4rem;
-    color: var(--text);
+    color: var(--sage-text);
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5;
 }
 
-.opp-note p { margin: 0; }
+.opp-note p { margin: 0; color: inherit; }
 
 /* Grid of opportunity cards */
 .opp-grid {
@@ -254,43 +313,40 @@ body {
 
 /* Individual opportunity card */
 .opp-card {
-    background: var(--card-bg);
-    padding: 1.8rem;
-    border-radius: 24px;
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-soft);
-    transition: all 0.3s ease;
+    background: var(--surface-raised);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--line);
+    transition: border-color 0.2s ease;
     display: flex;
     flex-direction: column;
 }
 
 .opp-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-secondary);
+    border-color: var(--sage);
 }
 
 .opp-card h3 {
-    color: var(--accent);          /* Orange project title */
+    color: var(--sage-deep);
     margin-top: 0;
     margin-bottom: 0.8rem;
-    letter-spacing: -0.02em;
 }
 
 .opp-card p {
-    color: var(--text-muted);
+    color: var(--ink-muted);
     margin-bottom: 1.2rem;
 }
 
 /* "Recruiting" pill at top of card */
 .opp-status {
     align-self: flex-start;
-    background: rgba(139, 163, 48, 0.1);   /* Green tint */
-    color: var(--accent-secondary);
+    background: var(--sage-soft);
+    color: var(--sage-text);
     padding: 0.35rem 0.9rem;
-    border-radius: 100px;
+    border-radius: var(--radius-pill);
     font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
 }
@@ -300,7 +356,7 @@ body {
     list-style: none;
     padding: 0;
     margin: auto 0 0 0;            /* pin to bottom for even card heights */
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--line);
     padding-top: 1.2rem;
 }
 
@@ -311,7 +367,7 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
     padding: 0.45rem 0;
-    color: var(--text);
+    color: var(--ink);
 }
 
 .opp-reqs .check {
@@ -321,11 +377,11 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent-secondary);
-    color: #fff;
+    background: var(--sage-deep);
+    color: var(--on-sage-deep);
     border-radius: 50%;
     font-size: 0.7rem;
-    font-weight: 800;
+    font-weight: 600;
     margin-top: 1px;
 }
 
@@ -335,12 +391,11 @@ body {
 
 /* Full-width theme card */
 .pub-card {
-    background: var(--card-bg);
+    background: var(--surface-raised);
     padding: 2rem 2.2rem;
-    border-radius: 24px;
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow-soft);
-    transition: all 0.3s ease;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--line);
+    transition: border-color 0.2s ease;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto 2rem auto;
@@ -348,39 +403,37 @@ body {
 }
 
 .pub-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-secondary);
+    border-color: var(--sage);
 }
 
 .pub-card h3 {
-    color: var(--accent);
+    color: var(--sage-deep);
     margin-top: 0;
     margin-bottom: 0.6rem;
-    letter-spacing: -0.02em;
 }
 
 .pub-card > p {
-    color: var(--text-muted);
+    color: var(--ink-muted);
     margin-bottom: 1.2rem;
 }
 
 /* "Project theme" pill at top of card */
 .pub-pill {
     display: inline-block;
-    background: rgba(139, 163, 48, 0.1);
-    color: var(--accent-secondary);
+    background: var(--sage-soft);
+    color: var(--sage-text);
     padding: 0.35rem 0.9rem;
-    border-radius: 100px;
+    border-radius: var(--radius-pill);
     font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
 }
 
 /* APA reference list */
 .pub-list {
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--line);
     padding-top: 1.2rem;
     margin-top: 0.4rem;
 }
@@ -392,20 +445,20 @@ body {
     font-size: 0.95rem;
     font-weight: 400;
     margin: 0 0 0.9rem 0;
-    color: var(--text);
+    color: var(--ink-body);
 }
 
 /* Small "Preprint" pill inside a citation */
 .pub-tag {
     display: inline-block;
     text-indent: 0;
-    background: rgba(139, 163, 48, 0.1);
-    color: var(--accent-secondary);
+    background: var(--sage-soft);
+    color: var(--sage-text);
     padding: 0.05rem 0.6rem;
-    border-radius: 100px;
+    border-radius: var(--radius-pill);
     font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-left: 0.4rem;
     vertical-align: 1px;
@@ -414,7 +467,7 @@ body {
 
 /* DOI / OSF link inside a citation */
 .pub-link {
-    color: var(--accent);
+    color: var(--sage-deep);
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;

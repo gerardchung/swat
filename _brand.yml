@@ -1,0 +1,27 @@
+logo:
+  images:
+    mark: brand/logos/swatlab-mark.svg
+    mark-dark: brand/logos/swatlab-mark-reverse.svg
+  small: mark
+  medium:
+    light: brand/logos/swatlab-wordmark.svg
+    dark: brand/logos/swatlab-wordmark-reverse.svg
+color:
+  palette:
+    linen: "#F2EFE8"
+    sage: "#8A9A83"
+    deep-sage: "#56654F"
+    clay: "#B5876E"
+    charcoal: "#2D2F2A"
+  background: linen
+  foreground: charcoal
+  primary: deep-sage
+  secondary: clay
+typography:
+  fonts:
+    - family: Fraunces
+      source: google
+    - family: Work Sans
+      source: google
+  base: Work Sans
+  headings: Fraunces

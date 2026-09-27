@@ -7,6 +7,7 @@ project:
 website:
   title: "SWAT LAB"
   site-url: https://swatlab.netlify.app
+  favicon: brand/logos/swatlab-app-icon.png
   navbar:
     background: white
     left:

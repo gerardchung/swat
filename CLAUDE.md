@@ -30,6 +30,9 @@ Bootstrap theme (`theme: none`), all styling lives in `style.css`.
 | `style.css`          | **All** site styling (colors, nav, cards, callouts)    |
 | `_quarto.yml`        | Site + navbar config                                   |
 | `images/`            | Site images                                            |
+| `brand/`             | Brand kit: `BRAND.md`, `tokens.json`, `logos/`          |
+| `_brand.yml`         | Quarto brand config (colours, fonts, logos)            |
+| `_nav-logo.md`       | Shared nav logo (inline SVG), included on every page   |
 | `_site/`             | Rendered HTML output (generated — don't edit by hand)  |
 | `old/`               | Archived old page(s), not linked in nav                |
 
@@ -38,9 +41,14 @@ Bootstrap theme (`theme: none`), all styling lives in `style.css`.
 - **Navigation** is a hand-built `.custom-nav` block at the top of each page
   (not Quarto's navbar, since `theme: none`). When adding a page, add its link
   to the `.custom-nav` on **every** page. Current links: Home, People, Research, Join Us.
-- **Colors** come from CSS variables in `style.css` (`:root`):
-  `--accent` = logo orange `#F16A37`, `--accent-secondary` = logo green `#8BA330`.
-  Reuse these variables rather than hard-coding colors.
+- **Colors** come from the "Sage & Clay" brand tokens as CSS variables in
+  `style.css` (`:root`), e.g. `--sage-deep` `#56654F` (links, primary),
+  `--clay` `#B5876E` (small accent), `--surface` `#F2EFE8` (background).
+  Reuse these variables rather than hard-coding colors. See "Design and
+  branding" at the end of this file.
+- **Logo in the nav:** each page's `.custom-nav` starts with
+  `{{< include _nav-logo.md >}}` (`../_nav-logo.md` from `people/`), which
+  inlines `brand/logos/swatlab-wordmark.svg` so it can use the Fraunces font.
 - Emoji/HTML entities like `&amp;` are fine inside the raw `<ul>` blocks.
 
 ## Adding a job / project opportunity card
@@ -107,3 +115,18 @@ Insert the new card as another `::: {.opp-card}` block inside `::: {.opp-grid}`.
 1. `quarto render` (or render the single page you changed)
 2. Show/verify the result if useful
 3. Commit and push to `main` only when the user asks to publish
+
+# Design and branding
+
+This site and any apps made from this folder use the SWAT Lab "Sage & Clay" style.
+
+- Before any visual work (pages, components, apps, logos, charts, slides), read `brand/BRAND.md`.
+- Use only the colours in `brand/BRAND.md` / `brand/tokens.json`. Matte and earthy. Never add bright or saturated colours (no bright orange, yellow, red or electric blue).
+- Fonts: Fraunces (headings, weight 500) and Work Sans (text), from Google Fonts.
+- Logos are in `brand/logos/`. Use them as they are: never redraw, recolour or stretch them. Use the `-reverse` versions on dark backgrounds.
+- Quarto picks up colours, fonts and logos from `_brand.yml`. If the site also has a custom `.scss` theme, keep it consistent with `_brand.yml` rather than overriding it.
+- Borders, not shadows. Soft corners. Buttons at least 44px tall. Sentence case for headings and buttons.
+- For R charts, use this colour order: #56654F, #B5876E, #8A9A83, #2D2F2A, #5F625B.
+- Note for this site: because it uses `theme: none`, Quarto does not apply the
+  colours and fonts from `_brand.yml` automatically. They are set by hand in
+  `style.css` — keep the two in sync if the brand changes.

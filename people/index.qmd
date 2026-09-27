@@ -4,6 +4,8 @@ page-layout: full
 ---
 
 ::: {.custom-nav}
+{{< include ../_nav-logo.md >}}
+
 [Home](../index.qmd){.nav-link-item}
 [People](index.qmd){.nav-link-item}
 [Research](../research.qmd){.nav-link-item}
@@ -35,7 +37,6 @@ page-layout: full
 ![](images/tay-darren/avatar.jpeg){.profile-img}
 
 #### Darren Tay
-Research Assistant \
 Social Work Undergraduate
 :::
 
@@ -44,8 +45,7 @@ Social Work Undergraduate
 
 ![](images/neo-jiexiang/avatar.jpg){.profile-img}
 
-#### Darren Tay
-Research Assistant \
+#### Neo Jie Xiang
 Computer Science Undergraduate
 
 :::
@@ -53,7 +53,10 @@ Computer Science Undergraduate
 ::: {.grid-card}
 
 
-#### To be updated soon!
+![](images/chan-isaac/avatar.webp){.profile-img}
+
+#### Isaac Chan
+Social Work & Computer Science Undergraduate
 
 :::
 :::
