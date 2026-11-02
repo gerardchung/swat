@@ -69,5 +69,15 @@ Social Work & Computer Science Undergraduate
 Lecturer, NUS Department of Social Work
 
 :::
+
+::: {.grid-card}
+
+
+![](images/guan-regina/avatar.jpg){.profile-img}
+
+#### Regina Guan
+Social Worker / Research Assistant
+
+:::
 :::
 ::::
