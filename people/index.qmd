@@ -30,7 +30,7 @@ page-layout: full
 
 ## Team Members
 
-::: {layout-ncol=3}
+::: {.grid .team-grid}
 ::: {.grid-card}
 
 
